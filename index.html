@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="The Dining Lounge - Wari Rooftop | Thai, Chinese, Italian & Arabian Cuisine">
+    <title>The Dining Lounge | Wari Rooftop Restaurant</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>The Dining <span>Lounge</span></h1>
+                <p>Wari Rooftop</p>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#combos">Combos</a></li>
+                <li><a href="#party">Party Menu</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact" class="order-btn">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background-image: url('assets/hero-bg.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Rooftop Dining Experience</h2>
+            <h1>Thai • Chinese • Italian • Arabian</h1>
+            <p>Authentic Flavors | Cozy Rooftop | Wari, Dhaka</p>
+            <a href="#menu" class="hero-btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Features / Highlights -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>200+ Items</h3>
+                    <p>Extensive menu selection</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tag"></i>
+                    <h3>Hot Deals</h3>
+                    <p>Starting from 193/-</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Party Menu</h3>
+                    <p>Unlimited from 595/-</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-moon"></i>
+                    <h3>Rooftop View</h3>
+                    <p>Perfect for couples & groups</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span>Menu</span></h2>
+                <p>Explore our diverse culinary offerings</p>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="menu-tabs" id="menuTabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="appetizers">Appetizers</button>
+                <button class="tab-btn" data-category="soup">Soup</button>
+                <button class="tab-btn" data-category="pizza">Pizza</button>
+                <button class="tab-btn" data-category="pasta">Pasta</button>
+                <button class="tab-btn" data-category="rice">Rice & Curry</button>
+                <button class="tab-btn" data-category="noodles">Noodles</button>
+                <button class="tab-btn" data-category="shawarma">Shawarma & Wrap</button>
+                <button class="tab-btn" data-category="drinks">Beverages</button>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Appetizers -->
+                <div class="menu-card" data-category="appetizers">
+                    <img src="assets/wonthon.jpg" alt="Special Wonthon" onerror="this.src='https://placehold.co/400x300?text=Wonthon'">
+                    <div class="menu-info">
+                        <h3>Special Wonthon <span>6pcs</span></h3>
+                        <p class="price">220/-</p>
+                        <p class="menu-desc">Crispy wonton with special filling</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="appetizers">
+                    <img src="assets/spring-roll.jpg" alt="Spring Roll" onerror="this.src='https://placehold.co/400x300?text=Spring+Roll'">
+                    <div class="menu-info">
+                        <h3>Spring Roll <span>6pcs</span></h3>
+                        <p class="price">230/-</p>
+                        <p class="menu-desc">Vegetable spring rolls</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="appetizers">
+                    <img src="assets/french-fries.jpg" alt="French Fries" onerror="this.src='https://placehold.co/400x300?text=French+Fries'">
+                    <div class="menu-info">
+                        <h3>Cheese French Fries</h3>
+                        <p class="price">242/-</p>
+                        <p class="menu-desc">Loaded with cheese</p>
+                    </div>
+                </div>
+
+                <!-- Soups -->
+                <div class="menu-card" data-category="soup">
+                    <img src="assets/tom-yum.jpg" alt="Tom Yum" onerror="this.src='https://placehold.co/400x300?text=Tom+Yum'">
+                    <div class="menu-info">
+                        <h3>Tom-Yum-Goong <span>(Prawn)</span></h3>
+                        <p class="price">253/- | 528/-</p>
+                        <p class="menu-desc">(1:1) (1:3)</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="soup">
+                    <img src="assets/lemongrass.jpg" alt="Lemon Grass Soup" onerror="this.src='https://placehold.co/400x300?text=Lemon+Grass'">
+                    <div class="menu-info">
+                        <h3>Special Thai Lemon Grass Soup</h3>
+                        <p class="price">230/- | 485/-</p>
+                        <p class="menu-desc">Signature Thai soup</p>
+                    </div>
+                </div>
+
+                <!-- Pizza - Thin Crust -->
+                <div class="menu-card" data-category="pizza">
+                    <img src="assets/pizza-thin.jpg" alt="Four Seasons Pizza" onerror="this.src='https://placehold.co/400x300?text=Four+Seasons+Pizza'">
+                    <div class="menu-info">
+                        <h3>Four Seasons Pizza</h3>
+                        <p class="price">419/- | 616/- | 847/-</p>
+                        <p class="menu-desc">Chicken, Beef, Mushroom, Black Olive, Shrimp</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pizza">
+                    <img src="assets/bbq-chicken-pizza.jpg" alt="BBQ Chicken Pizza" onerror="this.src='https://placehold.co/400x300?text=BBQ+Chicken+Pizza'">
+                    <div class="menu-info">
+                        <h3>BBQ Chicken Pizza</h3>
+                        <p class="price">429/- | 616/- | 847/-</p>
+                        <p class="menu-desc">BBQ Chicken, Red Chilli, Mushroom</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pizza">
+                    <img src="assets/meat-lovers.jpg" alt="Meat Lovers Pizza" onerror="this.src='https://placehold.co/400x300?text=Meat+Lovers'">
+                    <div class="menu-info">
+                        <h3>Meat Lovers</h3>
+                        <p class="price">424/- | 616/- | 836/-</p>
+                        <p class="menu-desc">Beef, Sausages, Black Olive</p>
+                    </div>
+                </div>
+
+                <!-- Deep Dish Pizza -->
+                <div class="menu-card" data-category="pizza">
+                    <img src="assets/pizza-deepdish.jpg" alt="BBQ Deep Dish" onerror="this.src='https://placehold.co/400x300?text=Deep+Dish+Pizza'">
+                    <div class="menu-info">
+                        <h3>BBQ Deep Dish Pizza <span>(Medium)</span></h3>
+                        <p class="price">1045/-</p>
+                        <p class="menu-desc">BBQ Chicken, Mozzarella, Parmesan, Cheddar</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pizza">
+                    <img src="assets/ultimate-chicago.jpg" alt="Ultimate Chicago" onerror="this.src='https://placehold.co/400x300?text=Ultimate+Chicago'">
+                    <div class="menu-info">
+                        <h3>The Ultimate Chicago <span>(Medium)</span></h3>
+                        <p class="price">1099/-</p>
+                        <p class="menu-desc">BBQ Chicken, Roasted Beef, Shrimp, Meatball</p>
+                    </div>
+                </div>
+
+                <!-- Pasta -->
+                <div class="menu-card" data-category="pasta">
+                    <img src="assets/pasta.jpg" alt="Pasta Basta" onerror="this.src='https://placehold.co/400x300?text=Pasta'">
+                    <div class="menu-info">
+                        <h3>Pasta Basta</h3>
+                        <p class="price">347/-</p>
+                        <p class="menu-desc">Secret sauce, chicken, mushroom, cheese</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <img src="assets/shrimp-pasta.jpg" alt="Shrimp Pasta" onerror="this.src='https://placehold.co/400x300?text=Shrimp+Pasta'">
+                    <div class="menu-info">
+                        <h3>Shrimp Pasta</h3>
+                        <p class="price">363/-</p>
+                        <p class="menu-desc">Cheese, Shrimp, Chilli</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <img src="assets/triple-cheese-pasta.jpg" alt="Triple Cheese Pasta" onerror="this.src='https://placehold.co/400x300?text=Triple+Cheese+Pasta'">
+                    <div class="menu-info">
+                        <h3>Triple Cheese & Cream Baked Pasta</h3>
+                        <p class="price">430/-</p>
+                        <p class="menu-desc">Mozzarella, Cheddar, White cream cheese</p>
+                    </div>
+                </div>
+
+                <!-- Rice & Curry -->
+                <div class="menu-card" data-category="rice">
+                    <img src="assets/rice.jpg" alt="Thai Fried Rice" onerror="this.src='https://placehold.co/400x300?text=Thai+Fried+Rice'">
+                    <div class="menu-info">
+                        <h3>Thai Fried Rice</h3>
+                        <p class="price">448/- | 525/-</p>
+                        <p class="menu-desc">(1:2) (1:3)</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="rice">
+                    <img src="assets/mongolian-beef.jpg" alt="Mongolian Beef" onerror="this.src='https://placehold.co/400x300?text=Mongolian+Beef'">
+                    <div class="menu-info">
+                        <h3>Mongolian Beef</h3>
+                        <p class="price">615/-</p>
+                        <p class="menu-desc">(1:3) Popular beef item</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="rice">
+                    <img src="assets/chicken-sizzling.jpg" alt="Chicken Sizzling" onerror="this.src='https://placehold.co/400x300?text=Chicken+Sizzling'">
+                    <div class="menu-info">
+                        <h3>Chicken Sizzling</h3>
+                        <p class="price">485/-</p>
+                        <p class="menu-desc">(1:3) Served on hot plate</p>
+                    </div>
+                </div>
+
+                <!-- Noodles -->
+                <div class="menu-card" data-category="noodles">
+                    <img src="assets/noodles.jpg" alt="Pad Thai" onerror="this.src='https://placehold.co/400x300?text=Pad+Thai'">
+                    <div class="menu-info">
+                        <h3>Pad Thai Noodles</h3>
+                        <p class="price">Contact for price</p>
+                        <p class="menu-desc">Traditional Thai style</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="noodles">
+                    <img src="assets/sizzling-chowmein.jpg" alt="Tibetan Sizzling Chowmein" onerror="this.src='https://placehold.co/400x300?text=Sizzling+Chowmein'">
+                    <div class="menu-info">
+                        <h3>Tibetan Sizzling Chowmein <span>(1:3)</span></h3>
+                        <p class="price">Contact for price</p>
+                        <p class="menu-desc">Chicken gravy, Mushroom, capsicum</p>
+                    </div>
+                </div>
+
+                <!-- Shawarma & Wrap -->
+                <div class="menu-card" data-category="shawarma">
+                    <img src="assets/shawarma.jpg" alt="Chicken Shawarma" onerror="this.src='https://placehold.co/400x300?text=Shawarma'">
+                    <div class="menu-info">
+                        <h3>Chicken Arabian Shawarma</h3>
+                        <p class="price">149/-</p>
+                        <p class="menu-desc">Most popular item</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="shawarma">
+                    <img src="assets/beef-wrap.jpg" alt="Beef Wrap" onerror="this.src='https://placehold.co/400x300?text=Beef+Wrap'">
+                    <div class="menu-info">
+                        <h3>Beef Cheese Wrap</h3>
+                        <p class="price">Contact for price</p>
+                        <p class="menu-desc">With melted cheese</p>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-card" data-category="drinks">
+                    <img src="assets/drinks.jpg" alt="Oreo Shake" onerror="this.src='https://placehold.co/400x300?text=Oreo+Shake'">
+                    <div class="menu-info">
+                        <h3>Oreo Shake</h3>
+                        <p class="price">230/-</p>
+                        <p class="menu-desc">Thick & creamy</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="drinks">
+                    <img src="assets/coffee.jpg" alt="Cold Coffee" onerror="this.src='https://placehold.co/400x300?text=Cold+Coffee'">
+                    <div class="menu-info">
+                        <h3>Cold Coffee with Dark Chocolate</h3>
+                        <p class="price">219/-</p>
+                        <p class="menu-desc">Refreshing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combos / Platters Section -->
+    <section class="combos-section" id="combos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Special <span>Combos & Platters</span></h2>
+                <p>Best value for money</p>
+            </div>
+            <div class="combos-grid">
+                <div class="combo-card">
+                    <img src="assets/platter.jpg" alt="Love Birds Platter" onerror="this.src='https://placehold.co/400x300?text=Love+Birds+Platter'">
+                    <h3>Love Birds Couple Platter <span>(1:2)</span></h3>
+                    <p class="combo-price">650/-</p>
+                    <p class="combo-desc">Thai Fried Rice + Thai Fried Chicken + Mixed Veg + Salad</p>
+                </div>
+                <div class="combo-card">
+                    <img src="assets/sweetheart-combo.jpg" alt="Sweet Heart Combo" onerror="this.src='https://placehold.co/400x300?text=Sweet+Heart+Combo'">
+                    <h3>Sweet Heart Combo <span>(3 person)</span></h3>
+                    <p class="combo-price">1150/- <span class="old-price">2260/-</span></p>
+                    <p class="combo-desc">Fried Rice + Chowmein + Thai Fried Chicken + Sweet n Sour Chicken</p>
+                </div>
+                <div class="combo-card">
+                    <img src="assets/beef-chili-combo.jpg" alt="Beef Chilli Combo" onerror="this.src='https://placehold.co/400x300?text=Beef+Chili+Combo'">
+                    <h3>Beef Chilli Combo <span>(3 person)</span></h3>
+                    <p class="combo-price">1199/- <span class="old-price">2360/-</span></p>
+                    <p class="combo-desc">Thai Fried Rice + Soup + Thai Fried Chicken + Beef Chilli Dry + Prawn</p>
+                </div>
+                <div class="combo-card">
+                    <img src="assets/masala-platter.jpg" alt="Masala Platter" onerror="this.src='https://placehold.co/400x300?text=Masala+Platter'">
+                    <h3>The Masala Platter <span>(1:2)</span></h3>
+                    <p class="combo-price">699/-</p>
+                    <p class="combo-desc">Masala Fried Rice + Spicy Chicken + Chicken Butter Masala + Masala Beef + Masala Prawn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Party Menu Section -->
+    <section class="party-section" id="party">
+        <div class="container">
+            <div class="section-header">
+                <h2>Party <span>Menu (Unlimited)</span></h2>
+                <p>Perfect for gatherings & celebrations</p>
+            </div>
+            <div class="party-grid">
+                <div class="party-card">
+                    <h3>Party Menu - 1</h3>
+                    <p class="party-price">595/- <span>per person</span></p>
+                    <ul>
+                        <li>Special Fried Rice <span>(Unlimited)</span></li>
+                        <li>Thai Fried Chicken <span>(3pcs)</span></li>
+                        <li>Mixed Thai Vegetable <span>(Unlimited)</span></li>
+                        <li>Masala Chicken/Chilli <span>(Unlimited)</span></li>
+                        <li>Green Salad + Soft Drinks + Water</li>
+                    </ul>
+                </div>
+                <div class="party-card">
+                    <h3>Party Menu - 2</h3>
+                    <p class="party-price">650/- <span>per person</span></p>
+                    <ul>
+                        <li>Special Thai Soup <span>(Unlimited)</span></li>
+                        <li>Special Fried Rice <span>(Unlimited)</span></li>
+                        <li>Thai Fried Chicken <span>(2pcs)</span></li>
+                        <li>Szechuan Chicken <span>(Unlimited)</span></li>
+                        <li>Masala Prawn <span>(Unlimited)</span></li>
+                        <li>Green Salad + Soft Drinks + Water</li>
+                    </ul>
+                </div>
+                <div class="party-card">
+                    <h3>Party Menu - 3</h3>
+                    <p class="party-price">680/- <span>per person</span></p>
+                    <ul>
+                        <li>Special Thai Soup <span>(Unlimited)</span></li>
+                        <li>Spring Roll/Thai Wonthon <span>(Unlimited)</span></li>
+                        <li>Spring Fried Chicken <span>(2pcs)</span></li>
+                        <li>Cantonese Beef <span>(Unlimited)</span></li>
+                        <li>Chicken Mixed Vegetable <span>(Unlimited)</span></li>
+                        <li>Soft Drinks + Mineral Water</li>
+                    </ul>
+                </div>
+                <div class="party-card">
+                    <h3>Party Menu - 4</h3>
+                    <p class="party-price">730/- <span>per person</span></p>
+                    <ul>
+                        <li>Special Thai Soup <span>(Unlimited)</span></li>
+                        <li>Spring Roll/Thai Wonthon <span>(Unlimited)</span></li>
+                        <li>Thai Fried Chicken <span>(2pcs)</span></li>
+                        <li>Mongolian Beef <span>(Unlimited)</span></li>
+                        <li>Prawn Mixed Vegetable <span>(Unlimited)</span></li>
+                        <li>Chicken Cashewnut Salad + Soft Drinks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Set Menu Section -->
+    <section class="setmenu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Set <span>Menus</span></h2>
+                <p>Quick & affordable meals</p>
+            </div>
+            <div class="setmenu-grid">
+                <div class="setmenu-card">
+                    <h3>Set Menu - A</h3>
+                    <p class="setmenu-price">299/-</p>
+                    <p>Thai Fried Rice + Thai Fried Chicken + Mixed Vegetable + Salad + Soft Drink</p>
+                </div>
+                <div class="setmenu-card">
+                    <h3>Set Menu - B</h3>
+                    <p class="setmenu-price">365/-</p>
+                    <p>Thai Fried Rice + Thai Fried Chicken(2pcs) + Chicken Masala/Chili + Mixed Vegetable + Salad + Soft Drink</p>
+                </div>
+                <div class="setmenu-card">
+                    <h3>Set Menu - C</h3>
+                    <p class="setmenu-price">225/-</p>
+                    <p>Thai Fried Rice + Chicken Masala Curry + Beef Zinger Mushroom + Mixed Vegetable + Salad + Soft Drink</p>
+                </div>
+                <div class="setmenu-card">
+                    <h3>Set Menu - D</h3>
+                    <p class="setmenu-price">445/-</p>
+                    <p>Saffron/Thai Fried Rice + Quarter BBQ Chicken + Sautéed Vegetable + BBQ Mushroom + Sausages Mint Salad + Soft Drink</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hot Deals Section -->
+    <section class="hotdeals-section">
+        <div class="container">
+            <div class="hotdeals-banner">
+                <h2><i class="fas fa-fire"></i> Hot Deals</h2>
+                <div class="hotdeals-list">
+                    <span>BBQ Wings</span>
+                    <span>Naga Wings</span>
+                    <span>2 Season Corndog</span>
+                    <span>Classic Corndog</span>
+                    <span>Whole Cheese Corndog</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Salad Section -->
+    <section class="salad-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fresh <span>Salads</span></h2>
+            </div>
+            <div class="salad-grid">
+                <div class="salad-item">
+                    <img src="assets/salad.jpg" alt="Chicken Cashew Nut Salad" onerror="this.src='https://placehold.co/100x100?text=Salad'">
+                    <div class="salad-info">
+                        <h3>Chicken Cashew Nut Salad</h3>
+                        <p>372/-</p>
+                    </div>
+                </div>
+                <div class="salad-item">
+                    <img src="assets/grilled-chicken-salad.jpg" alt="Grilled Chicken Salad" onerror="this.src='https://placehold.co/100x100?text=Grilled+Chicken'">
+                    <div class="salad-info">
+                        <h3>Grilled Chicken Salad</h3>
+                        <p>438/-</p>
+                    </div>
+                </div>
+                <div class="salad-item">
+                    <img src="assets/lounge-salad.jpg" alt="Lounge Special Salad" onerror="this.src='https://placehold.co/100x100?text=Lounge+Salad'">
+                    <div class="salad-info">
+                        <h3>Lounge Special Salad</h3>
+                        <p>460/-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Customer Reviews Section -->
+<section class="reviews-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>What <span>Customers Say</span></h2>
+            <p>Trusted by food lovers</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"Best rooftop dining experience in Wari! The BBQ Chicken Pizza is a must try."</p>
+                <div class="reviewer">
+                    <h4>Rakib Hasan</h4>
+                    <p>Google Review</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"Amazing Thai food. The Tom Yum soup is authentic and delicious."</p>
+                <div class="reviewer">
+                    <h4>Nadia Sultana</h4>
+                    <p>Food Blogger</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="review-text">"Great ambiance, friendly staff, and the party menu is value for money."</p>
+                <div class="reviewer">
+                    <h4>Shahriar Ahmed</h4>
+                    <p>Regular Customer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Location & Contact -->
+<section class="location-section" id="location">
+    <div class="container">
+        <div class="location-grid">
+            <div class="location-info">
+                <h2>Find <span>Us</span></h2>
+                <p><i class="fas fa-map-marker-alt"></i> Wari, Dhaka - Rooftop Restaurant</p>
+                <p><i class="fas fa-phone"></i> +880 1XXX-XXXXXX</p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: +880 1XXX-XXXXXX</p>
+                <p><i class="fab fa-facebook"></i> Facebook: The Dining Lounge Wari Rooftop</p>
+                <div class="hours">
+                    <h3>Opening Hours</h3>
+                    <p>Daily: 12:00 PM - 11:00 PM</p>
+                </div>
+            </div>
+            <div class="location-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.345678901234!2d90.41234567890123!3d23.734567890123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b0b0b0b0b%3A0x123456789abcdef!2sWari%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1234567890123!5m2!1sen!2sbd" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0; border-radius: 20px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>The Dining <span>Lounge</span></h2>
+                    <p>Wari Rooftop</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#combos">Combos</a></li>
+                        <li><a href="#party">Party Menu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> Call for Order</p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp Order Available</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Dining Lounge - Wari Rooftop. All prices are VAT included.</p>
+                <p class="note">*Images are for illustration purposes</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Tab filtering functionality
+        const tabs = document.querySelectorAll('.tab-btn');
+        const menuCards = document.querySelectorAll('.menu-card');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                tabs.forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                const category = tab.dataset.category;
+                
+                menuCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8801XXXXXXXXX?text=Hi!%20I%20want%20to%20place%20an%20order%20from%20The%20Dining%20Lounge" 
+      class="whatsapp-float" 
+      target="_blank"
+      style="position: fixed; bottom: 80px; right: 20px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 1000; transition: transform 0.3s; text-decoration: none;">
+       <i class="fab fa-whatsapp"></i>
+    </a>
+    
+ <div style="background: #ff0000; color: white; text-align: center; padding: 10px; font-size: 14px; position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;">
+    ⚠️ DEMO VERSION – Not for commercial use. Contact owner for live website.
+</div>   
+
+    
+</body>
+</html>
